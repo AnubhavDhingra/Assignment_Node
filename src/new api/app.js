@@ -2,7 +2,9 @@ var express = require('express');
 var mongoose = require('mongoose');
 var cor = require('cors');
 var bodyParser = require('body-parser');
-
+require('./models/products');
+require('./models/user');
+// require('/models/fbuser');
 mongoose.connect('mongodb://localhost:27017/stuffkart');
 
 var app = module.exports = express();
